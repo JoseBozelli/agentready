@@ -1,0 +1,58 @@
+{
+    "body": [
+        {
+            "AgentName": "Customer Support Triage Agent",
+            "GovernanceReadiness": "Not Ready",
+            "PrimaryBlocker": "Privacy review requested masking of customer personal data in tickets",
+            "NextAction": "Implement and document personal-data masking before the privacy re-review",
+            "ActionOwner": "Omar Haddad",
+            "ActionDueDate": "2026-09-25",
+            "DateStatus": "Overdue"
+        },
+        {
+            "AgentName": "Procurement Spend Analyzer",
+            "GovernanceReadiness": "Not Ready",
+            "PrimaryBlocker": "ROI assessment awaiting business owner validation",
+            "NextAction": "Validate the ROI assumptions and sign off on the assessment",
+            "ActionOwner": "Maya Chen",
+            "ActionDueDate": "2026-09-28",
+            "DateStatus": "Overdue"
+        },
+        {
+            "AgentName": "IT Helpdesk Agent",
+            "GovernanceReadiness": "Not Ready",
+            "PrimaryBlocker": "Documentation not finalized",
+            "NextAction": "Finalize the user guide and escalation procedure",
+            "ActionOwner": "Alex Singh",
+            "ActionDueDate": "2026-10-01",
+            "DateStatus": "Overdue"
+        },
+        {
+            "AgentName": "Finance Forecasting Agent",
+            "GovernanceReadiness": "Not Ready",
+            "PrimaryBlocker": "Security review not yet completed",
+            "NextAction": "Confirm access controls on forecast data with the security team",
+            "ActionOwner": "Alex Singh",
+            "ActionDueDate": "2026-10-02",
+            "DateStatus": "Due today"
+        },
+        {
+            "AgentName": "Marketing Content Agent",
+            "GovernanceReadiness": "Not Ready",
+            "PrimaryBlocker": "Compliance review requested disclosure labels on AI-generated content while the agent is already in production",
+            "NextAction": "Add AI-generated content disclosure and resubmit for compliance review",
+            "ActionOwner": "Sofia Rossi",
+            "ActionDueDate": "2026-10-02",
+            "DateStatus": "Due today"
+        },
+        {
+            "AgentName": "Contract Review Assistant",
+            "GovernanceReadiness": "Not Ready",
+            "PrimaryBlocker": "Multiple governance reviews not started and no documentation",
+            "NextAction": "Schedule the security review and draft the agent documentation",
+            "ActionOwner": "Grace Kim",
+            "ActionDueDate": "2026-10-09",
+            "DateStatus": "Due within 7 days"
+        }
+    ]
+}

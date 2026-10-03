@@ -1,0 +1,9 @@
+# Local helper files
+tree.txt
+*.tmp
+
+# OS and Office clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*

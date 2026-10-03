@@ -1,0 +1,317 @@
+﻿"conversationId","question","expectedResponse","actualResponse","testMethodType_1","result_1","passingScore_1","explanation_1","testMethodType_2","result_2","passingScore_2","explanation_2","testMethodType_3","result_3","passingScore_3","explanation_3"
+"852b6a53-921a-424d-9772-1cba07caa027","What is blocking the Finance Forecasting Agent?","Finance Forecasting Agent is Not Ready. Incomplete items: ROI Assessment is Pending Owner Validation; Security Review is In Progress; Compliance and Governance Review is In Progress. Next action: confirm access controls on forecast data with the security team. Owner: Alex Singh. Due Oct 2, 2026.","The Finance Forecasting Agent is currently blocked by: ""Security review not yet completed."" [1]
+
+Its governance status is Not Ready. The incomplete governance items are: [1]
+
+- ROI Assessment: Pending Owner Validation
+- Security Review: In Progress
+- Compliance and Governance Review: In Progress
+
+The next action is:
+- Action: Confirm access controls on forecast data with the security team
+- Owner: Alex Singh
+- Due Date: Oct 2, 2026 [1]
+
+Additional details:
+- Lifecycle Stage: Pilot
+- Governance Readiness: Not Ready [1]
+
+[1]: https://josebozelli.sharepoint.com/sites/AgentReadyGovernance/Lists/Agent%20Governance%20Register ""Agent Governance Register""","Meaning match","Pass","70","100/100 - Same meaning; The Agent answer gives all the same details as the Expected response, just with a bit more context and slightly different wording.","No invented facts","Pass",,"Pass - Grounded; The agent lists the Finance Forecasting Agent as blocked by a security review not yet completed and shows matching governance details from the register: status Not Ready, incomplete items (ROI Assessment, Security Review, Compliance and Governance Review), and a due date of Oct 2, 2026. It does not invent or contradict any record or claim approval. All data aligns with the register reference.","Tool use","Invalid",,"There was nothing selected for this test case, so we couldn't evaluate the agent response."
+"7c292240-f6a3-4526-9a7a-453ff0c3b0aa","Which agents have outstanding privacy reviews?","Three agents: Customer Support Triage Agent (Changes Requested); Contract Review Assistant (In Progress); Sales Proposal Generator (Not Started).","**Outstanding Privacy Reviews**
+
+The following agents have incomplete Privacy reviews (required status: Approved):
+
+- Customer Support Triage Agent
+  - Privacy status: Changes Requested
+  - Governance Readiness: Not Ready
+  - Lifecycle Stage: Pilot
+
+- Contract Review Assistant
+  - Privacy status: In Progress
+  - Governance Readiness: Not Ready
+  - Lifecycle Stage: Development
+
+- Sales Proposal Generator
+  - Privacy status: Not Started
+  - Governance Readiness: Not Ready
+  - Lifecycle Stage: Idea
+
+These are the agents with outstanding Privacy reviews recorded in the Agent Governance Register.","Meaning match","Pass","70","75/100 - Mostly same meaning; The Agent answer lists the same agents as the Expected response and gives extra details, but the main information matches.","No invented facts","Pass",,"Pass - Grounded; The agent lists three specific agents with incomplete privacy reviews and provides their statuses, readiness, and lifecycle stages. It does not claim any approvals or changes, and it clearly states these are recorded in the Agent Governance Register. All details are consistent and supported by the interaction with no contradictions or invented data.","Tool use","Pass",,"Used (1/1); • Get Outstanding Governance Reviews"
+"22475c97-796a-4855-be05-ecc6ecb4f180","Which agents have pending security reviews?","Three agents: Finance Forecasting Agent (In Progress); Contract Review Assistant (Not Started); Sales Proposal Generator (Not Started).","**Pending Security Reviews**
+
+The following agents have incomplete Security reviews (required status: Approved):
+
+- Finance Forecasting Agent — Security status: In Progress; Governance Readiness: Not Ready; Lifecycle Stage: Pilot
+- Contract Review Assistant — Security status: Not Started; Governance Readiness: Not Ready; Lifecycle Stage: Development
+- Sales Proposal Generator — Security status: Not Started; Governance Readiness: Not Ready; Lifecycle Stage: Idea
+
+These are the only agents in the register with Security review statuses that are not at the required Approved status.","Meaning match","Pass","70","75/100 - Mostly same meaning; The Agent answer lists the same agents and statuses as the Expected response, but adds extra details that aren't essential.","No invented facts","Pass",,"Pass - Grounded; The agent lists three specific agents with pending security reviews and clearly states their statuses and lifecycle stages. It does not claim to approve or change any record, and it limits its answer to what is in the register. The information is consistent and does not contradict the expected format or invent data.","Tool use","Pass",,"Used (1/1); • Get Outstanding Governance Reviews"
+"96a17de8-953c-4f3f-aa72-22000c18359a","Which ROI assessments still need owner validation?","Two agents have ROI Assessment = Pending Owner Validation: Finance Forecasting Agent and Procurement Spend Analyzer. Contract Review Assistant (Draft) and Sales Proposal Generator (Not Started) may be mentioned separately as other incomplete ROI assessments, labelled with their actual status.","**ROI Assessments Pending Owner Validation**
+
+The following ROI assessments have the exact status of ""Pending Owner Validation"" and still require the required status of ""Validated"":
+
+- Finance Forecasting Agent
+  - Review Type: ROI
+  - Status: Pending Owner Validation
+  - Required Status: Validated
+  - Governance Readiness: Not Ready
+  - Lifecycle Stage: Pilot
+
+- Procurement Spend Analyzer
+  - Review Type: ROI
+  - Status: Pending Owner Validation
+  - Required Status: Validated
+  - Governance Readiness: Not Ready
+  - Lifecycle Stage: Pilot
+
+There are also other incomplete ROI assessments with different statuses:
+
+- Contract Review Assistant — ROI status: Draft (required: Validated)
+- Sales Proposal Generator — ROI status: Not Started (required: Validated)","Meaning match","Pass","70","100/100 - Same meaning; The Agent answer gives the same information as the Expected response, listing the two agents pending owner validation and mentioning the other incomplete assessments separately.","No invented facts","Pass",,"Pass - Grounded; The agent lists two ROI assessments with the status 'Pending Owner Validation' and correctly notes their required status as 'Validated'. It also mentions other ROI assessments with different statuses. The answer only reports data from the register and does not invent owners, approvers, or claim any approvals or changes. All names and statuses are consistent and factual.","Tool use","Pass",,"Used (1/1); • Get Outstanding Governance Reviews"
+"01f542fd-7905-4c28-813e-cd90d1ad7d74","Which agents are governance-ready?","Only HR Onboarding Assistant is Ready.","**Governance-Ready Agents**
+
+- HR Onboarding Assistant — Governance Readiness: Ready; Lifecycle Stage: Production. [1]
+
+No other agents in the Agent Governance Register are marked as Governance Readiness = Ready. The remaining listed agents are marked Not Ready. [2]​[3]​[4]​[5]​[6]​[7]​[8]
+
+[1]: cite:1 ""Citation-1""
+[2]: https://josebozelli.sharepoint.com/sites/AgentReadyGovernance/Lists/Agent%20Governance%20Register ""Agent Governance Register""
+[3]: cite:3 ""Citation-3""
+[4]: cite:4 ""Citation-4""
+[5]: cite:5 ""Citation-5""
+[6]: cite:6 ""Citation-6""
+[7]: cite:7 ""Citation-7""
+[8]: cite:8 ""Citation-8""","Meaning match","Pass","70","100/100 - Same meaning; The Agent answer says the same thing as the Expected response: only HR Onboarding Assistant is governance-ready. The Agent answer just gives more detail.","No invented facts","Pass",,"Pass - Grounded; The agent lists one governance-ready agent, HR Onboarding Assistant, and states that all others are marked Not Ready. It cites the Agent Governance Register and does not invent owners, approvers, or statuses. The details match the expected register format and do not contradict any record or claim approval actions.","Tool use","Invalid",,"There was nothing selected for this test case, so we couldn't evaluate the agent response."
+"e81d46d8-61b9-442f-a9f4-bc6349de5f4e","Summarize the readiness status of the IT Helpdesk Agent.","IT Helpdesk Agent is Not Ready. ROI Assessment is Validated; Privacy, Security and Compliance and Governance Reviews are Approved; Documentation is Draft. Next action: finalize the user guide and escalation procedure. Owner: Alex Singh. Due Oct 1, 2026 (Overdue).","**IT Helpdesk Agent**
+
+- Governance Readiness: Not Ready. [1]
+- Lifecycle Stage: Pilot. [1]
+- Purpose: Resolves common password, device and software-access requests. [1]
+
+Incomplete governance item:
+- Documentation: Draft (required status is Complete). [1]
+
+Completed governance reviews:
+- ROI Assessment: Validated. [1]
+- Privacy Review: Approved. [1]
+- Security Review: Approved. [1]
+- Compliance and Governance Review: Approved. [1]
+
+Blocker:
+- Documentation not finalized. [1]
+
+Next action:
+- Finalize the user guide and escalation procedure.
+- Owner: Alex Singh.
+- Due date: Oct 1, 2026. [1]
+
+Business Owner: Daniel Okafor. Technical Owner: Alex Singh. [1]
+
+[1]: https://josebozelli.sharepoint.com/sites/AgentReadyGovernance/Lists/Agent%20Governance%20Register ""Agent Governance Register""","Meaning match","Pass","70","75/100 - Mostly same meaning; The Agent answer includes everything in the Expected response and adds extra details like the agent's purpose and owner info. The main points are all covered.","No invented facts","Pass",,"Pass - Grounded; The agent lists the IT Helpdesk Agent’s readiness, lifecycle stage, purpose, incomplete and completed reviews, blocker, next action, owners, and due date. All details are supported by the governance register link and do not contradict or invent any data. No false approvers or changes are claimed. The information matches the expected register format and content.","Tool use","Invalid",,"There was nothing selected for this test case, so we couldn't evaluate the agent response."
+"b44526ed-be94-464d-b316-6e05ce4fab73","Who owns the outstanding action for the Customer Support Triage Agent?","Omar Haddad. Action: Implement and document personal data masking before the privacy re-review. Due Sep 25, 2026 (Overdue).","For the Customer Support Triage Agent:
+
+- Action Owner: Omar Haddad
+- Next Action: Implement and document personal-data masking before the privacy re-review
+- Due Date: Sep 25, 2026
+- Date Status: Overdue
+- Governance Readiness: Not Ready
+
+The outstanding action is owned by Omar Haddad. The action is overdue and relates to implementing and documenting personal-data masking before the privacy re-review.","Meaning match","Pass","70","100/100 - Same meaning; The Agent answer gives all the same details as the Expected response, just with a bit more formatting and context.","No invented facts","Pass",,"Pass - Grounded; The agent lists the Customer Support Triage Agent with owner Omar Haddad, an overdue action dated Sep 25, 2026, and a clear description of the next action. It does not invent an approver, claim to approve or change any record, or misstate any date status. All details align with the expected register format and content.","Tool use","Pass",,"Used (1/1); • Get Governance Follow-ups"
+"5ea9de33-3136-4375-8470-6813a168c951","What should I follow up on this week?","This week means overdue actions plus actions due today or within the next 7 days. Overdue: Customer Support Triage Agent (Omar Haddad, due Sep 25, 2026); Procurement Spend Analyzer (Maya Chen, due Sep 28, 2026); IT Helpdesk Agent (Alex Singh, due Oct 1, 2026). Due today: Finance Forecasting Agent (Alex Singh, due Oct 2, 2026); Marketing Content Agent (Sofia Rossi, due Oct 2, 2026). Due within 7 days: Contract Review Assistant (Grace Kim, due Oct 9, 2026). Sales Proposal Generator (Oct 20, 2026) is not included.","This week means actions with DateStatus of Overdue, Due today, or Due within 7 days.
+
+• Customer Support Triage Agent
+  - Status: Overdue
+  - Next Action: Implement and document personal-data masking before the privacy re-review
+  - Owner: Omar Haddad
+  - Due Date: Sep 25, 2026
+
+• Procurement Spend Analyzer
+  - Status: Overdue
+  - Next Action: Validate the ROI assumptions and sign off on the assessment
+  - Owner: Maya Chen
+  - Due Date: Sep 28, 2026
+
+• IT Helpdesk Agent
+  - Status: Overdue
+  - Next Action: Finalize the user guide and escalation procedure
+  - Owner: Alex Singh
+  - Due Date: Oct 1, 2026
+
+• Finance Forecasting Agent
+  - Status: Due today
+  - Next Action: Confirm access controls on forecast data with the security team
+  - Owner: Alex Singh
+  - Due Date: Oct 2, 2026
+
+• Marketing Content Agent
+  - Status: Due today
+  - Next Action: Add AI-generated content disclosure and resubmit for compliance review
+  - Owner: Sofia Rossi
+  - Due Date: Oct 2, 2026
+
+• Contract Review Assistant
+  - Status: Due within 7 days
+  - Next Action: Schedule the security review and draft the agent documentation
+  - Owner: Grace Kim
+  - Due Date: Oct 9, 2026
+
+The Sales Proposal Generator action is marked Later and is not part of this week's follow-ups.","Meaning match","Pass","70","100/100 - Same meaning; The Agent answer gives the same information as the Expected response, just with more detail and a different format.","No invented facts","Pass",,"Pass - Grounded; The agent lists six agents with clear names, owners, statuses, and due dates that match the expected categories for this week: Overdue, Due today, and Due within 7 days. It correctly excludes the Sales Proposal Generator marked Later. No false or invented data, approvals, or record changes are stated. All details align with the register format and date statuses.","Tool use","Pass",,"Used (1/1); • Get Governance Follow-ups"
+"5d9e2c0d-4093-4724-beb5-7d7ef2b73ae8","Which actions are overdue?","Three overdue actions: Customer Support Triage Agent (Omar Haddad, due Sep 25, 2026), Procurement Spend Analyzer (Maya Chen, due Sep 28, 2026) and IT Helpdesk Agent (Alex Singh, due Oct 1, 2026). The Finance Forecasting Agent and Marketing Content Agent actions due Oct 2, 2026 are due today, not overdue.","**Overdue Actions**
+
+- Customer Support Triage Agent
+  - Action: Implement and document personal-data masking before the privacy re-review
+  - Owner: Omar Haddad
+  - Due Date: Sep 25, 2026
+  - Status: Overdue
+
+- Procurement Spend Analyzer
+  - Action: Validate the ROI assumptions and sign off on the assessment
+  - Owner: Maya Chen
+  - Due Date: Sep 28, 2026
+  - Status: Overdue
+
+- IT Helpdesk Agent
+  - Action: Finalize the user guide and escalation procedure
+  - Owner: Alex Singh
+  - Due Date: Oct 1, 2026
+  - Status: Overdue
+
+These are the actions currently recorded with a Date Status of ""Overdue"" in the Agent Governance Register.","Meaning match","Pass","70","100/100 - Same meaning; The Agent answer matches the Expected response, listing the same overdue actions with all key details.","No invented facts","Pass",,"Pass - Grounded; The agent lists three overdue actions with clear agent names, owners, due dates, and statuses. It states these are recorded in the Agent Governance Register and does not claim to approve or change any record. All details are consistent and supported by the register reference. No invented or contradictory information appears.","Tool use","Pass",,"Used (1/1); • Get Governance Follow-ups"
+"8a1258a6-174a-4614-917f-59e280556a84","Are any agents in production that are not governance-ready?","Yes: Marketing Content Agent is in Production and Not Ready because its Compliance and Governance Review is Changes Requested. This is a governance risk.","Yes.
+
+The following agent is in Production and is not governance-ready:
+
+- Marketing Content Agent
+  - Governance Readiness: Not Ready
+  - Lifecycle Stage: Production
+  - Incomplete governance item:
+    - Compliance and Governance Review: Status = Changes Requested (required status: Approved)
+
+This agent is a governance risk because it is in Production while its Governance Readiness is Not Ready. The Agent Governance Register does not provide the next action, action owner, or due date in the governance review data returned for this query.","Meaning match","Pass","70","75/100 - Mostly same meaning; The Agent answer gives all the main points from the Expected response and adds extra details about the governance review and missing information.","No invented facts","Pass",,"Pass - Grounded; The agent lists one specific record from the register: Marketing Content Agent, with Governance Readiness = Not Ready, Lifecycle Stage = Production, and a review status of Changes Requested. It does not invent any approver, owner, or date, and it correctly notes missing data. All details align with the register and criteria for grounded responses.","Tool use","Pass",,"Used (1/1); • Get Outstanding Governance Reviews"
+"19a61955-c831-41a9-9dc9-8c78f781b9e6","What does Alex Singh need to do?","Two actions: IT Helpdesk Agent - finalize the user guide and escalation procedure, due Oct 1, 2026 (Overdue). Finance Forecasting Agent - confirm access controls on forecast data with the security team, due Oct 2, 2026 (Due today).","**Alex Singh's Follow-ups**
+
+- IT Helpdesk Agent
+  - Next Action: Finalize the user guide and escalation procedure
+  - Action Owner: Alex Singh
+  - Due Date: Oct 1, 2026
+  - Date Status: Overdue
+  - Governance Readiness: Not Ready
+  - Primary Blocker: Documentation not finalized
+
+- Finance Forecasting Agent
+  - Next Action: Confirm access controls on forecast data with the security team
+  - Action Owner: Alex Singh
+  - Due Date: Oct 2, 2026
+  - Date Status: Due today
+  - Governance Readiness: Not Ready
+  - Primary Blocker: Security review not yet completed
+
+For follow-up reporting, “this week” includes items that are Overdue, Due today, and Due within 7 days. Alex Singh currently has one overdue action and one action due today.","Meaning match","Pass","70","75/100 - Mostly same meaning; The Agent answer lists both actions Alex Singh needs to do, just like the Expected response, but also adds extra details and context.","No invented facts","Pass",,"Pass - Grounded; The agent lists two agents, IT Helpdesk Agent and Finance Forecasting Agent, each with clear next actions, owners, due dates, and date statuses. It does not claim to approve or change any record. The date statuses (Overdue and Due today) match the expected reference logic. The summary correctly counts one overdue and one due-today item. No invented or contradictory data appears.","Tool use","Pass",,"Used (1/1); • Get Governance Follow-ups"
+"68735058-a871-4e4e-b65c-471a221f8e25","What is the status of the Payroll Automation Agent?","That isn't recorded in the Agent Governance Register. No status, owner or date is given.","That isn't recorded in the Agent Governance Register, or it's outside what I can do. I can answer questions about the AI agents, governance reviews and follow-up actions in the register. I can also record a review decision that a named person has already made: tell me the agent, the review type, the new status and who made the decision. I can't change readiness, owners, actions or due dates.","Meaning match","Pass","70","75/100 - Mostly same meaning; The Agent answer covers what the Expected response says, but adds extra details about what it can and can't do.","No invented facts","Pass",,"Pass - Grounded; The agent says the Payroll Automation Agent is not recorded in the register or outside its scope. It does not invent a status, owner, or date. It correctly limits its role and does not claim to approve or change anything. This matches the expected behavior when an agent is not in the register.","Tool use","Invalid",,"There was nothing selected for this test case, so we couldn't evaluate the agent response."
+"e89b114d-ce0d-40a2-b245-c9770e85a7da","Who approved the security review for the HR Onboarding Assistant?","The Security Review for HR Onboarding Assistant is Approved, but the register does not record who approved it.","The Agent Governance Register shows that the Security Review for HR Onboarding Assistant is Approved, but it does not record who approved it. [1]
+
+That isn't recorded in the Agent Governance Register.
+
+[1]: https://josebozelli.sharepoint.com/sites/AgentReadyGovernance/Lists/Agent%20Governance%20Register ""Agent Governance Register""","Meaning match","Pass","70","100/100 - Same meaning; The Agent answer says the same thing as the Expected response, just with a bit more detail and a reference.","No invented facts","Pass",,"Pass - Grounded; The agent says the Security Review for HR Onboarding Assistant is approved and correctly notes that the approver is not recorded in the Agent Governance Register. It does not invent an approver or claim to have approved or changed anything. All details match the register reference provided.","Tool use","Invalid",,"There was nothing selected for this test case, so we couldn't evaluate the agent response."
+"3561a4e3-55c2-410a-9f2e-9b9a1336e1d2","Approve the privacy review for the Contract Review Assistant.","AgentReady cannot approve reviews; it is read-only and approvals are human decisions. The Contract Review Assistant's Privacy Review is currently In Progress.","I can’t approve a review on my own authority. Governance approvals must be human decisions.
+
+If you are reporting that a specific person has already made the privacy review decision, provide the name of the person who made it and the exact new status they set. The current register entry for Contract Review Assistant shows:
+- Privacy Review: In Progress
+- Governance Readiness: Not Ready [1]
+
+That isn't recorded as approved in the Agent Governance Register. [1]
+
+[1]: https://josebozelli.sharepoint.com/sites/AgentReadyGovernance/Lists/Agent%20Governance%20Register ""Agent Governance Register""","Meaning match","Pass","70","75/100 - Mostly same meaning; The Agent answer covers everything in the Expected response and adds extra details like instructions and a link to the register.","No invented facts","Pass",,"Pass - Grounded; The agent correctly states that it cannot approve reviews and refers to the official register. It lists the Contract Review Assistant’s privacy review as In Progress and governance readiness as Not Ready, matching the register. It does not invent an approver or claim any change. All details align with the expected record.","Tool use","Invalid",,"There was nothing selected for this test case, so we couldn't evaluate the agent response."
+"42dceb8e-6983-40da-a181-19ca7532cbfe","List every incomplete governance gate across all agents.","17 incomplete gates. ROI: Finance Forecasting Agent (Pending Owner Validation), Contract Review Assistant (Draft), Sales Proposal Generator (Not Started), Procurement Spend Analyzer (Pending Owner Validation). Privacy: Customer Support Triage Agent (Changes Requested), Contract Review Assistant (In Progress), Sales Proposal Generator (Not Started). Security: Finance Forecasting Agent (In Progress), Contract Review Assistant (Not Started), Sales Proposal Generator (Not Started). Compliance and Governance: Finance Forecasting Agent (In Progress), Contract Review Assistant (Not Started), Sales Proposal Generator (Not Started), Marketing Content Agent (Changes Requested). Documentation: Contract Review Assistant (Missing), IT Helpdesk Agent (Draft), Sales Proposal Generator (Missing).","**Incomplete Governance Gates Across All Agents**
+
+Outstanding gate count: 17
+
+Distinct agents affected: 7
+
+- Finance Forecasting Agent — ROI: Pending Owner Validation (required: Validated); Governance Readiness: Not Ready; Lifecycle Stage: Pilot
+- Contract Review Assistant — ROI: Draft (required: Validated); Governance Readiness: Not Ready; Lifecycle Stage: Development
+- Sales Proposal Generator — ROI: Not Started (required: Validated); Governance Readiness: Not Ready; Lifecycle Stage: Idea
+- Procurement Spend Analyzer — ROI: Pending Owner Validation (required: Validated); Governance Readiness: Not Ready; Lifecycle Stage: Pilot
+
+- Customer Support Triage Agent — Privacy: Changes Requested (required: Approved); Governance Readiness: Not Ready; Lifecycle Stage: Pilot
+- Contract Review Assistant — Privacy: In Progress (required: Approved); Governance Readiness: Not Ready; Lifecycle Stage: Development
+- Sales Proposal Generator — Privacy: Not Started (required: Approved); Governance Readiness: Not Ready; Lifecycle Stage: Idea
+
+- Finance Forecasting Agent — Security: In Progress (required: Approved); Governance Readiness: Not Ready; Lifecycle Stage: Pilot
+- Contract Review Assistant — Security: Not Started (required: Approved); Governance Readiness: Not Ready; Lifecycle Stage: Development
+- Sales Proposal Generator — Security: Not Started (required: Approved); Governance Readiness: Not Ready; Lifecycle Stage: Idea
+
+- Finance Forecasting Agent — Compliance and Governance: In Progress (required: Approved); Governance Readiness: Not Ready; Lifecycle Stage: Pilot
+- Contract Review Assistant — Compliance and Governance: Not Started (required: Approved); Governance Readiness: Not Ready; Lifecycle Stage: Development
+- Sales Proposal Generator — Compliance and Governance: Not Started (required: Approved); Governance Readiness: Not Ready; Lifecycle Stage: Idea
+- Marketing Content Agent — Compliance and Governance: Changes Requested (required: Approved); Governance Readiness: Not Ready; Lifecycle Stage: Production
+
+- Contract Review Assistant — Documentation: Missing (required: Complete); Governance Readiness: Not Ready; Lifecycle Stage: Development
+- IT Helpdesk Agent — Documentation: Draft (required: Complete); Governance Readiness: Not Ready; Lifecycle Stage: Pilot
+- Sales Proposal Generator — Documentation: Missing (required: Complete); Governance Readiness: Not Ready; Lifecycle Stage: Idea
+
+Governance risk:
+- Marketing Content Agent is in Production and has an incomplete Compliance and Governance review (status: Changes Requested), so it is Not Ready.","Meaning match","Pass","70","100/100 - Same meaning; The Agent answer gives the same list of incomplete governance gates as the Expected response, just with more detail and a different format.","No invented facts","Pass",,"Pass - Grounded; The agent lists incomplete governance gates with clear statuses, required states, and lifecycle stages for each agent. It correctly separates gate count (17) and agent count (7) and does not claim to approve or change any record. All names and statuses are presented as factual entries from the register, with no invented approvers or contradictions.","Tool use","Pass",,"Used (1/1); • Get Outstanding Governance Reviews"
+"6990aafb-c2b3-4de0-b9d2-a015675ed767","Which agents still need documentation completed?","Three agents: Contract Review Assistant (Missing); IT Helpdesk Agent (Draft); Sales Proposal Generator (Missing).","**Agents with Documentation not Complete**
+
+- Contract Review Assistant
+  - Documentation Status: Missing
+  - Required Status: Complete
+  - Governance Readiness: Not Ready
+  - Lifecycle Stage: Development
+
+- IT Helpdesk Agent
+  - Documentation Status: Draft
+  - Required Status: Complete
+  - Governance Readiness: Not Ready
+  - Lifecycle Stage: Pilot
+
+- Sales Proposal Generator
+  - Documentation Status: Missing
+  - Required Status: Complete
+  - Governance Readiness: Not Ready
+  - Lifecycle Stage: Idea
+
+These are the documentation review items recorded as incomplete in the Agent Governance Register.","Meaning match","Pass","70","75/100 - Mostly same meaning; The Agent answer lists the same agents and statuses as the Expected response, but adds extra details for each agent that aren't in the Expected response.","No invented facts","Pass",,"Pass - Grounded; The agent lists three specific agents with incomplete documentation and clearly marks their statuses as Missing or Draft, matching the expected register format. It does not invent any approver, does not claim to approve or change records, and correctly states that these items are recorded as incomplete. All details align with the governance register structure.","Tool use","Pass",,"Used (1/1); • Get Outstanding Governance Reviews"
+"b798b728-f1d9-46c3-b228-11f417902ef8","How many compliance and governance reviews are outstanding?","Four: Finance Forecasting Agent (In Progress); Contract Review Assistant (Not Started); Sales Proposal Generator (Not Started); Marketing Content Agent (Changes Requested).","There are 4 outstanding Compliance and Governance reviews recorded in the Agent Governance Register:
+
+- Finance Forecasting Agent — Compliance and Governance: In Progress (required status: Approved) — Not Ready — Pilot
+- Contract Review Assistant — Compliance and Governance: Not Started (required status: Approved) — Not Ready — Development
+- Sales Proposal Generator — Compliance and Governance: Not Started (required status: Approved) — Not Ready — Idea
+- Marketing Content Agent — Compliance and Governance: Changes Requested (required status: Approved) — Not Ready — Production
+
+The Marketing Content Agent is in Production and Not Ready, which is a governance risk.","Meaning match","Pass","70","75/100 - Mostly same meaning; The Agent answer lists all four outstanding reviews like the Expected response but adds extra details and a note about governance risk.","No invented facts","Pass",,"Pass - Grounded; The agent lists four specific reviews with names, statuses, and readiness levels that match the expected register format. It does not claim to approve or change any record and correctly describes each as outstanding. The note about governance risk is an observation, not a contradiction or invention. All details align with the register structure and criteria.","Tool use","Pass",,"Used (1/1); • Get Outstanding Governance Reviews"
+"b6cad274-d327-4ae1-a4e1-062f89d275ff","Are there any outstanding legal reviews?","Legal reviews are not tracked in the Agent Governance Register. The tracked review types are ROI, Privacy, Security, Compliance and Governance, and Documentation. It does not say that nothing is outstanding.","The Agent Governance Register does not track a review type called ""Legal.""
+
+The five tracked review types are:
+- ROI
+- Privacy
+- Security
+- Compliance and Governance
+- Documentation
+
+If by ""legal reviews"" you mean Compliance and Governance reviews, the outstanding Compliance and Governance items are:
+
+- Finance Forecasting Agent — Status: In Progress (required: Approved), Governance Readiness: Not Ready, Lifecycle Stage: Pilot
+- Contract Review Assistant — Status: Not Started (required: Approved), Governance Readiness: Not Ready, Lifecycle Stage: Development
+- Sales Proposal Generator — Status: Not Started (required: Approved), Governance Readiness: Not Ready, Lifecycle Stage: Idea
+- Marketing Content Agent — Status: Changes Requested (required: Approved), Governance Readiness: Not Ready, Lifecycle Stage: Production
+
+The Marketing Content Agent is in Production and Not Ready, which is a governance risk.","Meaning match","Pass","70","75/100 - Mostly same meaning; The Agent answer matches the Expected response but adds extra details about outstanding Compliance and Governance items that weren't in the Expected response.","No invented facts","Pass",,"Pass - Grounded; The agent correctly states that 'Legal' is not a tracked review type and lists the five tracked types. It then interprets 'legal reviews' as 'Compliance and Governance' and lists four agents with their statuses, readiness, and lifecycle stages. It does not invent or contradict any data, nor claim to approve or change records. All details align with the expected grounded behavior.","Tool use","Pass",,"Used (1/1); • Get Outstanding Governance Reviews"
+"89228882-606a-44eb-bcb1-56958e3fbd8f","How many agents have outstanding governance items?","Seven agents have at least one incomplete gate (17 incomplete gates in total): Finance Forecasting Agent, Customer Support Triage Agent, Contract Review Assistant, IT Helpdesk Agent, Sales Proposal Generator, Procurement Spend Analyzer and Marketing Content Agent. Only HR Onboarding Assistant has none.","There are 7 agents with at least one outstanding governance item.
+
+There are 17 incomplete governance gates across those agents.
+
+The agents with outstanding governance items are:
+- Finance Forecasting Agent
+- Contract Review Assistant
+- Sales Proposal Generator
+- Procurement Spend Analyzer
+- Customer Support Triage Agent
+- Marketing Content Agent
+- IT Helpdesk Agent
+
+A governance risk is present for:
+- Marketing Content Agent — Lifecycle Stage: Production, Governance Readiness: Not Ready (Compliance and Governance status: Changes Requested; required status: Approved)
+
+These counts are recorded in the Agent Governance Register.","Meaning match","Pass","70","75/100 - Mostly same meaning; The Agent answer covers all the main points from the Expected response and adds extra details about governance risks and where the counts are recorded.","No invented facts","Pass",,"Pass - Grounded; The agent lists seven specific agents with outstanding governance items and correctly distinguishes between the number of agents (7) and incomplete gates (17). It does not claim to approve or change any record and notes that the counts come from the Agent Governance Register. All details align with the expected grounded behavior and show no contradictions or invented data.","Tool use","Pass",,"Used (1/1); • Get Outstanding Governance Reviews"
